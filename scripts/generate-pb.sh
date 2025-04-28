@@ -1,6 +1,7 @@
 #!/bin/bash
 
 docker run \
+    --privileged \
     --rm \
     -v "$(cd "$(dirname "$0")"; pwd)/..":/data \
     golang \
